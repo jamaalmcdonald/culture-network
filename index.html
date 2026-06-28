@@ -387,5 +387,13 @@ p<!DOCTYPE html>
     <strong>Culture Network</strong>
     <p>Original media network. Produced by Fourth Quarter Media. Official partners: CoreFuel and Creative Customs.</p>
   </footer>
+  <a class="admin-link" href="admin.html" aria-hidden="true" tabindex="-1">Admin</a>
+  <script>
+    document.addEventListener('keydown', function (event) {
+      if (event.shiftKey && event.altKey && event.key.toLowerCase() === 'a') {
+        window.location.href = 'admin.html';
+      }
+    });
+  </script>
 </body>
 </html>

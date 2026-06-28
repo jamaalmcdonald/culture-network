@@ -217,5 +217,13 @@
     <strong>Culture Network</strong>
     <p>Original media network. Premium streaming, live television, and creator-led content.</p>
   </footer>
+  <a class="admin-link" href="admin.html" aria-hidden="true" tabindex="-1">Admin</a>
+  <script>
+    document.addEventListener('keydown', function (event) {
+      if (event.shiftKey && event.altKey && event.key.toLowerCase() === 'a') {
+        window.location.href = 'admin.html';
+      }
+    });
+  </script>
 </body>
 </html>
