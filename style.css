@@ -496,6 +496,34 @@ nav a:hover,
   background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
 }
 
+.advertise-card,
+.investor-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.advertise-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(240,185,70,0.16), rgba(255,255,255,0.03));
+}
+
+.advertise-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+}
+
+.advertise-card p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.investor-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .submit {
   text-align: center;
   max-width: 760px;
@@ -556,7 +584,8 @@ footer strong { color: var(--text); }
   .card-grid,
   .coming-grid,
   .creator-list,
-  .poster-row {
+  .poster-row,
+  .investor-grid {
     grid-template-columns: 1fr;
   }
 
