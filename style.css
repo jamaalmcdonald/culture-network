@@ -571,6 +571,144 @@ footer {
 
 footer strong { color: var(--text); }
 
+.page-shell {
+  padding: 36px 5vw 24px;
+}
+
+.page-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  align-items: center;
+  padding: 40px 5vw 24px;
+}
+
+.page-intro p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.page-grid,
+.page-grid-2,
+.page-grid-3,
+.page-grid-4 {
+  display: grid;
+  gap: 16px;
+}
+
+.page-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.page-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.page-card,
+.form-card,
+.stats-card {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.page-card:hover,
+.form-card:hover,
+.stats-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(240, 185, 70, 0.45);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.26);
+}
+
+.page-card h3,
+.form-card h3,
+.stats-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.24rem;
+}
+
+.page-card p,
+.form-card p,
+.stats-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.page-card .btn {
+  margin-top: 14px;
+}
+
+.form-card {
+  max-width: 640px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.field-group {
+  display: grid;
+  gap: 8px;
+}
+
+.field-group label {
+  color: var(--gold);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.field-group input,
+.field-group textarea,
+.field-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(0,0,0,0.3);
+  color: var(--text);
+}
+
+.field-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.quick-links a {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+}
+
 .admin-link {
   position: fixed;
   right: 14px;
@@ -624,7 +762,11 @@ footer strong { color: var(--text); }
   .coming-grid,
   .creator-list,
   .poster-row,
-  .investor-grid {
+  .investor-grid,
+  .page-grid-3,
+  .page-grid-2,
+  .page-grid-4,
+  .page-hero {
     grid-template-columns: 1fr;
   }
 
